@@ -1,0 +1,12 @@
+---
+- name: Apply baseline configuration
+  hosts: all
+  become: true
+  roles:
+    - role: koyashiro.debian_base.baseline
+      vars:
+        hostname: "example"
+        # locale: "ja_JP.UTF-8"
+        # timezone: "Asia/Tokyo"
+        # extra_packages:
+        #   - neovim

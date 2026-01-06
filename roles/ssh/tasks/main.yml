@@ -1,0 +1,14 @@
+---
+- name: Configure SSH server
+  ansible.builtin.copy:
+    dest: /etc/ssh/sshd_config.d/99-ansible.conf
+    content: |
+      Port {{ ssh_port }}
+      PermitRootLogin {{ ssh_permit_root_login }}
+      PubkeyAuthentication {{ ssh_pubkey_auth | ternary('yes', 'no') }}
+      PasswordAuthentication {{ ssh_password_auth | ternary('yes', 'no') }}
+    owner: root
+    group: root
+    mode: "0644"
+    validate: sshd -t -f %s
+  notify: Restart ssh

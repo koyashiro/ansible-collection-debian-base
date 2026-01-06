@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  role_name: ssh
+  author: koyashiro
+  description: Configure SSH server for Debian
+  license: MIT
+  min_ansible_version: "2.14"
+  platforms:
+    - name: Debian
+      versions:
+        - bookworm
+  galaxy_tags:
+    - debian
+    - ssh
+    - security
+
+dependencies: []

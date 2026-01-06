@@ -1,0 +1,11 @@
+---
+- name: Validate hostname is defined
+  ansible.builtin.assert:
+    that:
+      - hostname is defined
+      - hostname | length > 0
+    fail_msg: "hostname is required"
+
+- name: Set hostname
+  ansible.builtin.hostname:
+    name: "{{ hostname }}"

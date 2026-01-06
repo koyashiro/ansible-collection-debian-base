@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  role_name: baseline
+  author: koyashiro
+  description: Apply all baseline configurations for Debian
+  license: MIT
+  min_ansible_version: "2.18"
+  platforms:
+    - name: Debian
+      versions:
+        - bookworm
+  galaxy_tags:
+    - debian
+    - baseline
+    - system
+
+dependencies:
+  - role: koyashiro.debian_base.locale
+  - role: koyashiro.debian_base.timezone
+  - role: koyashiro.debian_base.hostname
+  - role: koyashiro.debian_base.packages
+  - role: koyashiro.debian_base.editor
+  - role: koyashiro.debian_base.ssh

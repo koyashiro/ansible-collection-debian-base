@@ -1,0 +1,15 @@
+---
+base_packages:
+  - vim
+  - curl
+  - wget
+  - git
+  - rsync
+  - dnsutils
+  - tcpdump
+  - lsof
+  - htop
+  - file
+  - tree
+  - bash-completion
+extra_packages: []

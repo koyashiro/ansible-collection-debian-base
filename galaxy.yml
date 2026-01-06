@@ -1,0 +1,19 @@
+---
+namespace: koyashiro
+name: debian_base
+version: 0.1.0
+readme: README.md
+description: Baseline Ansible collection for Debian systems
+authors:
+  - koyashiro
+license:
+  - MIT
+license_file: LICENSE
+repository: https://github.com/koyashiro/ansible-collection-debian-base
+issues: https://github.com/koyashiro/ansible-collection-debian-base/issues
+tags:
+  - linux
+  - debian
+  - system
+dependencies:
+  community.general: ">=5.0.0"

@@ -1,0 +1,5 @@
+---
+ssh_port: 22
+ssh_permit_root_login: "no"
+ssh_pubkey_auth: true
+ssh_password_auth: false

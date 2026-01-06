@@ -9,7 +9,7 @@ Baseline Ansible collection for Debian systems.
 
 ## Dependencies
 
-- `community.general` >= 5.0.0
+- `community.general` >= 10.0.0
 
 ## Installation
 
